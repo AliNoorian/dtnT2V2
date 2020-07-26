@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.rest;
 
-import com.dotin.leavesystem.dao.LeaveService;
+import com.dotin.leavesystem.dao.LeaveDAO;
 import com.dotin.leavesystem.models.Leave;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,9 +11,9 @@ import java.util.List;
 @RequestMapping("/api")
 public class LeaveRestController {
 
-    private final LeaveService leaveService;
+    private final LeaveDAO leaveService;
 
-    public LeaveRestController(LeaveService leaveService) {
+    public LeaveRestController(LeaveDAO leaveService) {
         this.leaveService = leaveService;
     }
 

@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.service;
 
-import com.dotin.leavesystem.dao.CategoryService;
+import com.dotin.leavesystem.dao.CategoryDAO;
 import com.dotin.leavesystem.models.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,10 +12,10 @@ import java.util.List;
 public class CategoryServiceImpl implements com.dotin.leavesystem.service.CategoryService {
 
 
-    private final CategoryService categoryDAO;
+    private final CategoryDAO categoryDAO;
 
     @Autowired
-    public CategoryServiceImpl(CategoryService categoryDAO) {
+    public CategoryServiceImpl(CategoryDAO categoryDAO) {
         this.categoryDAO = categoryDAO;
     }
 

@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.rest;
 
-import com.dotin.leavesystem.dao.CategoryService;
+import com.dotin.leavesystem.dao.CategoryDAO;
 import com.dotin.leavesystem.models.Category;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,9 +13,9 @@ import java.util.List;
 @RequestMapping("/api")
 public class CategoryRestController {
 
-    private final CategoryService categoryService;
+    private final CategoryDAO categoryService;
 
-    public CategoryRestController(CategoryService categoryService) {
+    public CategoryRestController(CategoryDAO categoryService) {
         this.categoryService = categoryService;
     }
 

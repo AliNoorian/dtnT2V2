@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class CategoryDAOHibernateImpl implements CategoryService {
+public class CategoryDAOHibernateImpl implements CategoryDAO {
 
     @PersistenceContext
     private final EntityManager entityManager;

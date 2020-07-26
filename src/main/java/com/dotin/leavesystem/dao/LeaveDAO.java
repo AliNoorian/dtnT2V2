@@ -5,7 +5,7 @@ import com.dotin.leavesystem.models.Leave;
 
 import java.util.List;
 
-public interface LeaveService {
+public interface LeaveDAO {
 
      List<Leave> findAll();
      Leave findById(int Id);

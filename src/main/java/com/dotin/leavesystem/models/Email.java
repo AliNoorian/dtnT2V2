@@ -29,7 +29,7 @@ public class Email {
     @JoinColumn(name = "sender_id")
     private Employee senderEmployee;
 
-    @ManyToMany(mappedBy = "reciever_emails", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "receiverEmails", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Employee> recievers;
 
 

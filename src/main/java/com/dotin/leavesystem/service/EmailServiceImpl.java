@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.service;
 
-import com.dotin.leavesystem.dao.EmailService;
+import com.dotin.leavesystem.dao.EmailDAO;
 import com.dotin.leavesystem.models.Email;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,10 +11,10 @@ import java.util.List;
 @Service
 public class EmailServiceImpl implements com.dotin.leavesystem.service.EmailService {
 
-    private final EmailService emailDAO;
+    private final EmailDAO emailDAO;
 
     @Autowired
-    public EmailServiceImpl(EmailService emailDAO) {
+    public EmailServiceImpl(EmailDAO emailDAO) {
         this.emailDAO = emailDAO;
     }
 

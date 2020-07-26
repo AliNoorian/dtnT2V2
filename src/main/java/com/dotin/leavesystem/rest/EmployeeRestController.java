@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.rest;
 
-import com.dotin.leavesystem.dao.EmployeeServie;
+import com.dotin.leavesystem.dao.EmployeeDAO;
 import com.dotin.leavesystem.models.Employee;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,9 +11,9 @@ import java.util.List;
 @RequestMapping("/api")
 public class EmployeeRestController {
 
-    private final EmployeeServie employeeServie;
+    private final EmployeeDAO employeeServie;
 
-    public EmployeeRestController(EmployeeServie employeeServie) {
+    public EmployeeRestController(EmployeeDAO employeeServie) {
         this.employeeServie = employeeServie;
     }
 

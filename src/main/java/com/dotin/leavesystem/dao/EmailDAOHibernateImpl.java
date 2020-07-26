@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class EmailDAOHibernateImpl implements EmailService {
+public class EmailDAOHibernateImpl implements EmailDAO {
 
     @PersistenceContext
     private final EntityManager entityManager;

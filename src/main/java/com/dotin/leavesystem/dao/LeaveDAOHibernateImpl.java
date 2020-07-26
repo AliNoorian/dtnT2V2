@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class LeaveDAOHibernateImpl implements LeaveService {
+public class LeaveDAOHibernateImpl implements LeaveDAO {
 
     @PersistenceContext
     private final EntityManager entityManager;

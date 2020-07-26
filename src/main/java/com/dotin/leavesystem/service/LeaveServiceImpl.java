@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.service;
 
-import com.dotin.leavesystem.dao.LeaveService;
+import com.dotin.leavesystem.dao.LeaveDAO;
 import com.dotin.leavesystem.models.Leave;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,10 +11,10 @@ import java.util.List;
 @Service
 public class LeaveServiceImpl implements com.dotin.leavesystem.service.LeaveService {
 
-    private final LeaveService leaveDAO;
+    private final LeaveDAO leaveDAO;
 
     @Autowired
-    public LeaveServiceImpl(LeaveService leaveDAO) {
+    public LeaveServiceImpl(LeaveDAO leaveDAO) {
         this.leaveDAO = leaveDAO;
     }
 

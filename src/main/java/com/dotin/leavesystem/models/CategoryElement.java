@@ -29,14 +29,14 @@ public class CategoryElement {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @OneToMany(mappedBy = "employee_role", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "employeeRole", cascade = CascadeType.ALL)
     private List<Employee> employees;
 
-    @OneToMany(mappedBy = "leave_type", cascade = CascadeType.ALL)
-    private List<Leave> typeVacations;
+    @OneToMany(mappedBy = "leaveType", cascade = CascadeType.ALL)
+    private List<Leave> leaveType;
 
-    @OneToMany(mappedBy = "leave_status", cascade = CascadeType.ALL)
-    private List<Leave> statusVacations;
+    @OneToMany(mappedBy = "leaveStatus", cascade = CascadeType.ALL)
+    private List<Leave> leaveStatus;
 
 
 

@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.rest;
 
-import com.dotin.leavesystem.dao.EmailService;
+import com.dotin.leavesystem.dao.EmailDAO;
 import com.dotin.leavesystem.models.Email;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,9 +11,9 @@ import java.util.List;
 @RequestMapping("/api")
 public class EmailRestController {
 
-    private final EmailService emailService;
+    private final EmailDAO emailService;
 
-    public EmailRestController(EmailService emailService) {
+    public EmailRestController(EmailDAO emailService) {
         this.emailService = emailService;
     }
 

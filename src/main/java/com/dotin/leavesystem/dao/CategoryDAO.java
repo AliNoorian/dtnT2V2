@@ -4,7 +4,7 @@ import com.dotin.leavesystem.models.Category;
 
 import java.util.List;
 
-public interface CategoryService {
+public interface CategoryDAO {
 
     List<Category> findAll();
     Category findById(int Id);

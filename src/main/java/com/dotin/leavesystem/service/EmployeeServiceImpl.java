@@ -1,6 +1,6 @@
 package com.dotin.leavesystem.service;
 
-import com.dotin.leavesystem.dao.EmployeeServie;
+import com.dotin.leavesystem.dao.EmployeeDAO;
 import com.dotin.leavesystem.models.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,10 +11,10 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private final EmployeeServie employeeDAO;
+    private final EmployeeDAO employeeDAO;
 
     @Autowired
-    public EmployeeServiceImpl(EmployeeServie employeeDAO) {
+    public EmployeeServiceImpl(EmployeeDAO employeeDAO) {
         this.employeeDAO = employeeDAO;
     }
 

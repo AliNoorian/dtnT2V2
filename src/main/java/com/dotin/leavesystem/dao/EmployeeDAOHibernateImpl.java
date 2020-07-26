@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class EmployeeDAOHibernateImpl implements EmployeeServie {
+public class EmployeeDAOHibernateImpl implements EmployeeDAO {
 
     @PersistenceContext
     private final EntityManager entityManager;

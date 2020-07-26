@@ -5,7 +5,7 @@ import com.dotin.leavesystem.models.Email;
 
 import java.util.List;
 
-public interface EmailService {
+public interface EmailDAO {
 
      List<Email> findAll();
      Email findById(int Id);

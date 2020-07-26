@@ -25,11 +25,14 @@ public class Employee {
     @Column(name = "email_address", nullable = false)
     private String emailAddress;
 
-    @OneToOne
-    @Column(name = "manager_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "manager_id")
     private Employee employeeManager;
 
-    @OneToMany(mappedBy = "sender_employee", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "employeeManager", cascade = CascadeType.ALL)
+    private List<Employee> managerEmployeesList;
+
+    @OneToMany(mappedBy = "senderEmployee", cascade = CascadeType.ALL)
     private List<Email> senderEmails;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

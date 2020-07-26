@@ -4,7 +4,7 @@ import com.dotin.leavesystem.models.Employee;
 
 import java.util.List;
 
-public interface EmployeeServie {
+public interface EmployeeDAO {
 
      List<Employee> findAll();
      Employee findById(int Id);
